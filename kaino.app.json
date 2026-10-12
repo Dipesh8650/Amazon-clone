@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developers.kainostore.com/schemas/app-manifest-v1.json",
+  "schemaVersion": 1,
+  "build": {
+    "context": ".",
+    "dockerfile": "Dockerfile"
+  },
+  "runtime": {
+    "port": 8080,
+    "healthPath": "/"
+  },
+  "database": {
+    "type": "none",
+    "migrationCommand": []
+  },
+  "environment": []
+}
